@@ -208,7 +208,7 @@ function handleHover(event)
     }
 }
 
-function renderBoard() // make clear whos turn it is whats left
+function renderBoard()
 {
     for (var y = 0; y < 8; y++)
     {
@@ -238,6 +238,8 @@ function renderBoard() // make clear whos turn it is whats left
             }
         }       
     }
+    ctx.fillStyle = getFillStyle();
+    ctx.fillRect(0, 800, 800, 100);
 }
 
 
@@ -336,7 +338,7 @@ function setup()
 {
     var canvas = document.createElement("canvas");
     canvas.width = 800;
-    canvas.height = 800;
+    canvas.height = 900;
     document.body.appendChild(canvas);
     ctx = canvas.getContext("2d");
     canvas.onmousemove = handleHover;
