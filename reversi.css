@@ -1,3 +1,5 @@
-﻿body
-{
+﻿canvas {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
 }
